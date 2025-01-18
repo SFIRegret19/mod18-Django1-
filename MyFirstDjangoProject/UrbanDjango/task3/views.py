@@ -19,17 +19,13 @@ def main_page_index(request):
 def catalog_page_index(request):
     title = 'games'
     catalog_h1_text = 'Игры'
-    game1_text = 'Atomic Heart'
-    game2_text = 'Cyberpunk 2077'
-    game3_text = 'PayDay 2'
+    game_list = ['Atomic Heart', 'Cyberpunk 2077', 'PayDay 2']
     return_text = 'Вернуться обратно'
     button_text = 'Купить'
     context = {
         'title': title,
         'catalog_h1_text': catalog_h1_text,
-        'game1_text': game1_text,
-        'game2_text': game2_text,
-        'game3_text': game3_text,
+        'game_list': game_list,
         'button_text': button_text,
         'return_text': return_text
     }
