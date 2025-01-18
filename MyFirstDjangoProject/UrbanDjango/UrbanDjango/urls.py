@@ -18,13 +18,14 @@ from django.contrib import admin
 from django.urls import path
 # from task2.views import view1, view2
 # from example1.views import index
-from task3.views import main_page_index, catalog_page_index, cart_page_index
+from task4.views import base, platform_page_index, catalog_page_index, cart_page_index
 from django.views.generic import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('platform/', main_page_index),
+    path('platform/', platform_page_index),
     path('platform/games/', catalog_page_index),
-    path('platform/cart/', cart_page_index)
+    path('platform/cart/', cart_page_index),
+    path('base/', base)
     # path('index/', TemplateView.as_view(template_name='index2.html'))
 ]
